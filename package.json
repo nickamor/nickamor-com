@@ -1,0 +1,16 @@
+{
+  "name": "nickamor.com",
+  "version": "1.0.0",
+  "description": "Dynamic/static site for nickamor.com.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"Warning: no builder specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/nickamor/nickamor.com.git"
+  },
+  "author": "Nicholas Amor",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme"
+}
