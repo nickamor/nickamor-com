@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/nickamor
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nickamor.com
+  * I am nickamor (https://keybase.io/nickamor) on keybase.
+  * I have a public key ASAjCzf7QPxpr2gEVRkSKnKPN1Tx8MPdoKBHWSEryCu_swo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120230b37fb40fc69af68045519122a728f3754f1f0c3dda0a04759212bc82bbfb30a",
+            "host": "keybase.io",
+            "kid": "0120230b37fb40fc69af68045519122a728f3754f1f0c3dda0a04759212bc82bbfb30a",
+            "uid": "970f8001025b0ac6af985e0f882cd119",
+            "username": "nickamor"
+        },
+        "service": {
+            "hostname": "nickamor.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.21"
+    },
+    "ctime": 1492951700,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1492951494,
+        "hash": "cc542af97070b26bbde754d252857c8ab65237e63ddf6aead828180f77d097c4f3c92e34473c29e51a53e7791c151fd609a3b1e56aaeed6b83ffdc40b6b72939",
+        "seqno": 1034065
+    },
+    "prev": "5bbf51034c144bb1738b50a840eda330d1f49d27dbd92c905a36143d0f807725",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgIws3+0D8aa9oBFUZEipyjzdU8fDD3aCgR1khK8grv7MKp3BheWxvYWTFAvV7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMjMwYjM3ZmI0MGZjNjlhZjY4MDQ1NTE5MTIyYTcyOGYzNzU0ZjFmMGMzZGRhMGEwNDc1OTIxMmJjODJiYmZiMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMjMwYjM3ZmI0MGZjNjlhZjY4MDQ1NTE5MTIyYTcyOGYzNzU0ZjFmMGMzZGRhMGEwNDc1OTIxMmJjODJiYmZiMzBhIiwidWlkIjoiOTcwZjgwMDEwMjViMGFjNmFmOTg1ZTBmODgyY2QxMTkiLCJ1c2VybmFtZSI6Im5pY2thbW9yIn0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJuaWNrYW1vci5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4yMSJ9LCJjdGltZSI6MTQ5Mjk1MTcwMCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNDkyOTUxNDk0LCJoYXNoIjoiY2M1NDJhZjk3MDcwYjI2YmJkZTc1NGQyNTI4NTdjOGFiNjUyMzdlNjNkZGY2YWVhZDgyODE4MGY3N2QwOTdjNGYzYzkyZTM0NDczYzI5ZTUxYTUzZTc3OTFjMTUxZmQ2MDlhM2IxZTU2YWFlZWQ2YjgzZmZkYzQwYjZiNzI5MzkiLCJzZXFubyI6MTAzNDA2NX0sInByZXYiOiI1YmJmNTEwMzRjMTQ0YmIxNzM4YjUwYTg0MGVkYTMzMGQxZjQ5ZDI3ZGJkOTJjOTA1YTM2MTQzZDBmODA3NzI1Iiwic2Vxbm8iOjYsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RAa/KxX1EP5A+FQSN//bhehtUMr4TqytvyZ3yzeoRYV2M0cItehA+4Z4PHglY6i/GFr27wbo5mQoLdJhNpPckiCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKU19AnF8BG2AKpC+yAI6jRkzTZNh8jUa5u65hi2bQ5Xo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/nickamor
+
+==================================================================
