@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q="
         crossorigin="anonymous" />
     <style type="text/css" media="screen">
-        .hero.is-primary {
-            background-color: lime;
+        .hero {
+            background-color: #76FF03;
         }
 
-        .title,
-        .subtitle {
+        .hero .title,
+        .hero .subtitle {
             font-family: 'Raleway', sans-serif;
+            color: #424242;
         }
 
         body {
             font-family: 'Source Sans Pro', sans-serif;
-            background-color: #333333;
+            background-color: #424242;
             height: 100vh;
         }
 
         .breadcrumb a {
-            color: lime;
+            color: #76FF03;
+            font-weight: 700;
         }
     </style>
     <!--<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" async>
@@ -49,7 +51,7 @@
 </head>
 
 <body class="is-dark">
-    <section class="hero is-medium is-primary">
+    <section class="hero is-medium">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">Nicholas Amor</h1>
@@ -131,7 +133,7 @@
     <script>
         WebFont.load({
             google: {
-                families: ['Source Sans Pro', 'Raleyway:400,600']
+                families: ['Source Sans Pro:700', 'Raleyway:400', 'Raleway:600']
             }
         });
     </script>
