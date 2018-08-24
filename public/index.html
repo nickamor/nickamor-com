@@ -10,16 +10,16 @@
         crossorigin="anonymous" />
     <style type="text/css" media="screen">
         .hero .title,
-        .hero .subtitle {
+        .hero .subtitle {            
             display: table;
             float: none;
             background-color: #76FF03;
-            font-family: raleway, sans-serif;
+            font-family: 'Raleway', sans-serif;
             color: #424242;
         }
 
         body {
-            font-family: source-sans-pro, sans-serif;
+            font-family: 'Source Sans Pro', sans-serif;
             background-color: #424242;
             height: 100vh;
         }
@@ -125,7 +125,14 @@
             </nav>
         </div>
     </section>
-    <script src="https://use.edgefonts.net/source-sans-pro:n7;raleway:n4,n6.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Source Sans Pro:700', 'Raleyway:400', 'Raleway:600']
+            }
+        });
+    </script>
 </body>
 
 </html>
