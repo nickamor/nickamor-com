@@ -14,7 +14,8 @@ let colors = [
 	{ bg: "#fff", contrast: "#00f", normal: "#000"},
 	{ bg: "#fff", contrast: "#000", normal: "#000"},
 	{ bg: "#000", contrast: "#f00", normal: "#fff"},
-	{ bg: "#000", contrast: "#0f0", normal: "#fff"}
+	{ bg: "#000", contrast: "#0f0", normal: "#fff"},
+	{ bg: "#000", contrast: "#fff", normal: "#fff"}
 ];
 
 function generateStylesheet() {
