@@ -4,7 +4,8 @@
   "description": "Dynamic/static site for nickamor.com.",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Warning: no builder specified\""
+    "build": "netlify-lambda build src/functions",
+    "serve": "netlify-lambda serve src/functions"
   },
   "repository": {
     "type": "git",
@@ -12,5 +13,9 @@
   },
   "author": "Nicholas Amor",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme"
+  "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme",
+  "dependencies": {
+    "netlify-lambda": "^1.4.3"
+  },
+  "devDependencies": {}
 }
