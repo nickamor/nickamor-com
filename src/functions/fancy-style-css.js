@@ -1,5 +1,5 @@
 let colors = [
-	{ bg: "#ffbf00", contrast: "#36454f", normal: "#f5f0f0" },
+	{ bg: "#ffbf00", contrast: "#36454f", normal: "#36454f" },
 	{ bg: "#424242", contrast: "#76ff03", normal: "#b5b5b5" },
 	{ bg: "#76ff03", contrast: "#424242", normal: "#424242" },
 	{ bg: "#36454f", contrast: "#ffbf00", normal: "#f5f0f0" },
