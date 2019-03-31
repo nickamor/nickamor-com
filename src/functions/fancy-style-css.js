@@ -20,7 +20,7 @@ let colors = [
 function generateStylesheet() {
 	let n = Math.floor(Math.random() * colors.length);
 	let c = colors[n];
-	return `:root { --bg: ${c.bg}; --contrast: ${c.contrast}; --normal: ${c.normal}; }`;
+	return `:root { --bg: ${c.bg} !important; --contrast: ${c.contrast} !important; --normal: ${c.normal} !important; }`;
 }
 
 exports.handler = function(event, context, callback) {
