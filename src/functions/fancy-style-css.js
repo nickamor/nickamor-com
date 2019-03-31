@@ -1,7 +1,7 @@
 let colors = [
 	{ bg: "#ffbf00", contrast: "#36454f", normal: "#f5f0f0" },
 	{ bg: "#424242", contrast: "#76ff03", normal: "#b5b5b5" },
-	{ bg: "#76ff03", contrast: "#424242", normal: "#b5b5b5" },
+	{ bg: "#76ff03", contrast: "#424242", normal: "#424242" },
 	{ bg: "#36454f", contrast: "#ffbf00", normal: "#f5f0f0" },
 	{ bg: "#251351", contrast: "#e2d7d3", normal: "#b5b5b5" },
 	{ bg: "#ff3800", contrast: "#030708", normal: "#030708" },
