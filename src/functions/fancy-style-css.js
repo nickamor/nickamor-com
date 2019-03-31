@@ -7,14 +7,20 @@ let colors = [
 	{ bg: "#ff3800", contrast: "#030708", normal: "#030708" },
 	{ bg: "#2b64a9", contrast: "#fffcff", normal: "#b5b5b5" },
 	{ bg: "#cbd4c2", contrast: "#19647e", normal: "#50514f" },
-	{ bg: "#50514f", contrast: "#f4c430", normal: "#b5b5b5" },
 	{ bg: "#ede8e8", contrast: "#71cfeb", normal: "#b5b5b5" },
 	{ bg: "#33302b", contrast: "#d40000", normal: "#b5b5b5" },
 	{ bg: "#393d3f", contrast: "#62929e", normal: "#b5b5b5" },
+	{ bg: "#002395", contrast: "#f77f00", normal: "#b5b5b5" },
+	{ bg: "#15e6cd", contrast: "#403d39", normal: "#363636" },
+	{ bg: "#1d1f21", contrast: "#c5c8c6", normal: "#373b41" },
+	{ bg: "#272822", contrast: "#fff", normal: "#66d9ef" },
 	{ bg: "#fff", contrast: "#00f", normal: "#000"},
+	{ bg: "#fff", contrast: "#f0f", normal: "#000"},
 	{ bg: "#fff", contrast: "#000", normal: "#000"},
 	{ bg: "#000", contrast: "#f00", normal: "#fff"},
 	{ bg: "#000", contrast: "#0f0", normal: "#fff"},
+	{ bg: "#000", contrast: "#ff0", normal: "#fff"},
+	{ bg: "#000", contrast: "#0ff", normal: "#fff"},
 	{ bg: "#000", contrast: "#fff", normal: "#fff"}
 ];
 
