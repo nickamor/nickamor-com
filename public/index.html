@@ -9,6 +9,7 @@
     <link rel="canonical" href="https://www.nickamor.com/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
         integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://www.nickamor.com/.netlify/functions/fancy-style-css" />
     <style type="text/css" media="screen">
         @keyframes intro {
             from {
@@ -85,6 +86,10 @@
             color: var(--contrast);
             font-weight: 700;
             min-height: 48px;
+        }
+
+        .breadcrumb li + li::before {
+            color: var(--normal);
         }
     </style>
     <script>
