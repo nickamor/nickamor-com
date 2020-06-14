@@ -1,4 +1,4 @@
-let colors = [
+const colors = [
   { bg: "#ffbf00", contrast: "#36454f", normal: "#36454f" },
   { bg: "#424242", contrast: "#76ff03", normal: "#b5b5b5" },
   { bg: "#76ff03", contrast: "#424242", normal: "#424242" },
@@ -24,14 +24,18 @@ let colors = [
   { bg: "#000", contrast: "#fff", normal: "#fff" },
 ];
 
-function generateStylesheet() {
-  let n = Math.floor(Math.random() * colors.length);
-  let c = colors[n];
+function random(set) {
+  const n = Math.floor(Math.random() * set.length);
+  return set[n];
+}
+
+function generateStylesheet(colors) {
+  const c = random(colors);
   return `:root { --bg: ${c.bg} !important; --contrast: ${c.contrast} !important; --normal: ${c.normal} !important; }`;
 }
 
-exports.handler = function (event, context, callback) {
-  let response = {
+exports.handler = function (event, _, callback) {
+  const response = {
     statusCode: 200,
     body: "",
     headers: {
@@ -40,10 +44,10 @@ exports.handler = function (event, context, callback) {
     },
   };
 
-  let reqCookie = event.headers["cookie"];
+  const reqCookie = event.headers["cookie"];
 
   if (typeof reqCookie === "string" && reqCookie.includes("seen-it=yeah")) {
-    response.body = generateStylesheet();
+    response.body = generateStylesheet(colors);
   }
 
   callback(null, response);

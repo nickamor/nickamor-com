@@ -334,20 +334,19 @@
       });
     </script>
     <script>
-      function reloadStyles() {}
-      const css = document.getElementById("fancy-style-css");
-      const url = css.getAttribute("href");
-      const button = document.getElementById("fancy-style-button");
-      button.addEventListener("click", () => {
-        button.setAttribute("disabled", "disabled");
-        fetch(url)
-          .then((value) => value.text())
-          .then((text) => {
-            button.removeAttribute("disabled");
-            css.innerHTML = text;
-          })
-          .catch(() => button.removeAttribute("disabled"));
-      });
+      const url = document
+        .getElementById("fancy-style-css")
+        .getAttribute("href");
+      document
+        .getElementById("fancy-style-button")
+        .addEventListener("click", () => {
+          const t = Date.now();
+          const newStyle = document.createElement("link");
+          newStyle.rel = "stylesheet";
+          newStyle.href = `${url}?t=${t}`;
+          newStyle.title = "fancy-style-css";
+          document.body.appendChild(newStyle);
+        });
     </script>
   </body>
 </html>
