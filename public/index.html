@@ -1,207 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Nicholas Amor. Software Engineer - Melbourne, Australia">
+    <meta
+      name="description"
+      content="Nicholas Amor. Software Engineer - Melbourne, Australia"
+    />
     <title>Nicholas Amor</title>
     <link rel="canonical" href="https://www.nickamor.com/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
-        integrity="sha256-zIG416V1ynj3Wgju/scU80KAEWOsO5rRLfVyRDuOv7Q=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://www.nickamor.com/.netlify/functions/fancy-style-css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      id="fancy-style-css"
+      rel="stylesheet"
+      href="https://www.nickamor.com/.netlify/functions/fancy-style-css"
+    />
     <style type="text/css" media="screen">
-        @keyframes intro {
-            from {
-                width: 0;
-            }
-
-            20% {
-                width: 0;
-            }
-
-            80% {
-                width: 100%;
-            }
+      @keyframes intro {
+        from {
+          width: 0;
         }
 
-        @keyframes intro-subtitle {
-            from {
-                width: 0;
-            }
-
-            40% {
-                width: 0;
-            }
-
-            to {
-                width: 100%;
-            }
+        20% {
+          width: 0;
         }
 
-        :root {
-            --bg: #424242;
-            --contrast: #76FF03;
-            --normal: #b5b5b5;
+        80% {
+          width: 100%;
+        }
+      }
+
+      @keyframes intro-subtitle {
+        from {
+          width: 0;
         }
 
-        .hero .title,
-        .hero .subtitle {
-            display: table;
-            float: none;
-            font-family: 'Raleway', sans-serif;
-            color: var(--bg);
-            position: relative;
-            z-index: 1;
+        40% {
+          width: 0;
         }
 
-        .hero .title::after,
-        .hero .subtitle::after {
-            content: '';
-            background-color: var(--contrast);
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
+        to {
+          width: 100%;
         }
+      }
 
-        .hero .title::after {
-            animation: intro 500ms 1;
-        }
+      :root {
+        --bg: #424242;
+        --contrast: #76ff03;
+        --normal: #b5b5b5;
+      }
 
-        .hero .subtitle::after {
-            animation: intro-subtitle 500ms 1;
-        }
+      .hero .title,
+      .hero .subtitle {
+        display: table;
+        float: none;
+        font-family: "Raleway", sans-serif;
+        font-weight: 600;
+        color: var(--bg);
+        position: relative;
+        z-index: 1;
+      }
 
-        body {
-            font-family: 'Source Sans Pro', sans-serif;
-            background-color: var(--bg);
-            color: var(--normal);
-            min-height: 100vh;
-        }
+      .hero .title::after,
+      .hero .subtitle::after {
+        content: "";
+        background-color: var(--contrast);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
 
-        .breadcrumb a {
-            color: var(--contrast);
-            font-weight: 700;
-            min-height: 48px;
-        }
+      .hero .title::after {
+        animation: intro 500ms 1;
+      }
 
-        .breadcrumb li + li::before {
-            color: var(--normal);
-        }
+      .hero .subtitle::after {
+        animation: intro-subtitle 500ms 1;
+      }
+
+      body {
+        font-family: "Source Sans Pro", sans-serif;
+        background-color: var(--bg);
+        color: var(--normal);
+        min-height: 100vh;
+      }
+
+      .breadcrumb a {
+        color: var(--contrast);
+        font-weight: 700;
+        min-height: 48px;
+      }
+
+      .breadcrumb li + li::before {
+        color: var(--normal);
+      }
+
+      .button.is-primary {
+        border-color: var(--contrast) !important;
+        color: var(--contrast) !important;
+      }
+
+      .button.is-primary:hover,
+      .button.is-primary:focus {
+        background-color: var(--contrast) !important;
+        color: var(--bg) !important;
+      }
+
+      #fancy-style-container {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+
+      #fancy-style-button {
+        border-bottom: none;
+        border-right: none;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
     </style>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-101250218-1', 'auto');
-        ga('send', 'pageview');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
+      ga("create", "UA-101250218-1", "auto");
+      ga("send", "pageview");
     </script>
-</head>
+  </head>
 
-<body class="is-dark">
+  <body class="is-dark">
     <section class="hero is-medium">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">Nicholas Amor</h1>
-                <h2 class="subtitle">Software Engineer - Melbourne, Australia</h2>
-            </div>
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Nicholas Amor</h1>
+          <h2 class="subtitle">Software Engineer - Melbourne, Australia</h2>
         </div>
+      </div>
     </section>
     <section class="is-invisible">
-        <hr />
+      <hr />
     </section>
     <section class="section">
-        <div class="container">
-            <nav class="breadcrumb has-bullet-separator">
-                <ul>
-                    <li>
-                        <a class="navbar-item" href="mailto:me@nickamor.com">
-                            <span class="socicon-mail"> </span>contact me</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://www.facebook.com/realnickamor">
-                            <span class="socicon-facebook"> </span>facebook</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://github.com/nickamor">
-                            <span class="socicon-github"> </span>github</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://au.linkedin.com/in/nickamor">
-                            <span class="socicon-linkedin"> </span>linkedin</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://twitter.com/realnickamor">
-                            <span class="socicon-twitter"> </span>twitter</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://www.codecademy.com/nickamor">codecademy</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://codepen.io/nickamor/">codepen</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener"
-                            href="https://www.codingame.com/profile/2cb3bf29b9102076dc036b2f7dcdbabb2219011">codingame</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://www.devrant.io/users/fluxmaniac">devrant</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener"
-                            href="https://www.goodreads.com/user/show/52294336-nicholas">goodreads</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://www.hackerrank.com/nickamor">hackerrank</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://keybase.io/nickamor">keybase</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://medium.com/@realnickamor">medium</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener"
-                            href="https://ozlance.com.au/profile/nxx/worker">ozlance</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://open.spotify.com/user/nick.amor">spotify</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener"
-                            href="https://stackoverflow.com/users/2775168/nick-amor">stack
-                            overflow</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener" href="https://steamcommunity.com/id/romakin/">steam</a>
-                    </li>
-                    <li>
-                        <a class="navbar-item" rel="noopener"
-                            href="https://www.upwork.com/o/profiles/users/_~0143436abe14ca36ea/">upwork</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <nav class="breadcrumb has-bullet-separator">
+          <ul>
+            <li>
+              <a class="navbar-item" href="mailto:me@nickamor.com">
+                <span class="socicon-mail"> </span>contact me</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.facebook.com/realnickamor"
+              >
+                <span class="socicon-facebook"> </span>facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://github.com/nickamor"
+              >
+                <span class="socicon-github"> </span>github</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://au.linkedin.com/in/nickamor"
+              >
+                <span class="socicon-linkedin"> </span>linkedin</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://twitter.com/realnickamor"
+              >
+                <span class="socicon-twitter"> </span>twitter</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.codecademy.com/nickamor"
+                >codecademy</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://codepen.io/nickamor/"
+                >codepen</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.codingame.com/profile/2cb3bf29b9102076dc036b2f7dcdbabb2219011"
+                >codingame</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.devrant.io/users/fluxmaniac"
+                >devrant</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.goodreads.com/user/show/52294336-nicholas"
+                >goodreads</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.hackerrank.com/nickamor"
+                >hackerrank</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://keybase.io/nickamor"
+                >keybase</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://medium.com/@realnickamor"
+                >medium</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://ozlance.com.au/profile/nxx/worker"
+                >ozlance</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://open.spotify.com/user/nick.amor"
+                >spotify</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://stackoverflow.com/users/2775168/nick-amor"
+                >stack overflow</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://steamcommunity.com/id/romakin/"
+                >steam</a
+              >
+            </li>
+            <li>
+              <a
+                class="navbar-item"
+                rel="noopener"
+                href="https://www.upwork.com/o/profiles/users/_~0143436abe14ca36ea/"
+                >upwork</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
+    <aside id="fancy-style-container" class="aside">
+      <button
+        id="fancy-style-button"
+        class="button is-small is-primary is-outlined"
+      >
+        &#10227;
+      </button>
+    </aside>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
     <script>
-        WebFont.load({
-            google: {
-                families: ['Source Sans Pro:700', 'Raleyway:400', 'Raleway:600']
-            }
-        });
+      WebFont.load({
+        google: {
+          families: ["Source Sans Pro:700", "Raleway:600"],
+        },
+      });
     </script>
-</body>
-
+    <script>
+      function reloadStyles() {}
+      const css = document.getElementById("fancy-style-css");
+      const url = css.getAttribute("href");
+      const button = document.getElementById("fancy-style-button");
+      button.addEventListener("click", () => {
+        button.setAttribute("disabled", "disabled");
+        fetch(url)
+          .then((value) => value.text())
+          .then((text) => {
+            button.removeAttribute("disabled");
+            css.innerHTML = text;
+          })
+          .catch(() => button.removeAttribute("disabled"));
+      });
+    </script>
+  </body>
 </html>
