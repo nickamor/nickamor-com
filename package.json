@@ -16,6 +16,6 @@
   "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme",
   "dependencies": {},
   "devDependencies": {
-    "netlify-lambda": "^1.5.0"
+    "netlify-lambda": "^2.0.0"
   }
 }
