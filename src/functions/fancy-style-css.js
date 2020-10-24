@@ -31,7 +31,7 @@ function random(set) {
 
 function generateStylesheet(colors) {
   const c = random(colors);
-  return `:root { --bg: ${c.bg} !important; --contrast: ${c.contrast} !important; --normal: ${c.normal} !important; }`;
+  return `:root { --bg: ${c.bg}; --contrast: ${c.contrast}; --normal: ${c.normal}; }`;
 }
 
 exports.handler = function (event, _, callback) {
