@@ -1,3 +1,5 @@
+import { Handler } from "@netlify/functions";
+
 const colors = [
   { bg: "#ffbf00", contrast: "#36454f", normal: "#36454f" },
   { bg: "#424242", contrast: "#76ff03", normal: "#b5b5b5" },
@@ -34,7 +36,7 @@ function generateStylesheet(colors) {
   return `:root { --bg: ${c.bg}; --contrast: ${c.contrast}; --normal: ${c.normal}; }`;
 }
 
-exports.handler = function (event, _, callback) {
+const handler: Handler = async (event, context) => {
   const response = {
     statusCode: 200,
     body: "",
@@ -50,5 +52,7 @@ exports.handler = function (event, _, callback) {
     response.body = generateStylesheet(colors);
   }
 
-  callback(null, response);
+  return response;
 };
+
+export { handler };

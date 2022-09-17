@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "Dynamic/static site for nickamor.com.",
   "main": "index.js",
-  "scripts": {
-    "build": "netlify-lambda build src/functions",
-    "serve": "netlify-lambda serve src/functions"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/nickamor/nickamor.com.git"
@@ -16,6 +13,6 @@
   "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme",
   "dependencies": {},
   "devDependencies": {
-    "netlify-lambda": "^2.0.0"
+    "@netlify/functions": "^1.2.0"
   }
 }
