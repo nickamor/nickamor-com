@@ -86,6 +86,16 @@
       .hero .subtitle::after {
         animation: intro-subtitle 500ms 1;
       }
+      
+      @media (prefers-reduced-motion) {
+        .hero .title::after {
+          animation: none;
+        }
+
+        .hero .subtitle::after {
+          animation: none;
+        }
+      }
 
       html {
         background-color: var(--bg);
