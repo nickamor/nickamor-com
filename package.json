@@ -15,6 +15,6 @@
   "homepage": "https://bitbucket.org/nickamor/nickamor.com#readme",
   "dependencies": {},
   "devDependencies": {
-    "@netlify/functions": "^2.1.0"
+    "@netlify/functions": "^3.0.0"
   }
 }
